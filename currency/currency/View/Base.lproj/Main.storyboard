@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="currency" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exchange Rate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aa2-xF-K2n">
+                                <rect key="frame" x="74" y="50" width="748" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                <color key="textColor" red="0.41428061548223349" green="0.27612859940761164" blue="0.19905196880278558" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ndm-gB-RhG">
+                                <rect key="frame" x="74" y="127.5" width="748" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eurosign.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8bE-6H-7qD">
+                                        <rect key="frame" x="0.0" y="0.5" width="248.5" height="79"/>
+                                        <color key="tintColor" red="0.92758713488324873" green="0.84532171719680527" blue="0.77298927906937398" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="U28-zk-dtn"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="111.232" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arf-db-aZz">
+                                        <rect key="frame" x="249.5" y="0.0" width="249" height="80"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                        <color key="textColor" red="0.98310743945177659" green="0.89591806273911889" blue="0.81925619954314721" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40M-WS-GeJ">
+                                        <rect key="frame" x="499.5" y="0.0" width="248.5" height="80"/>
+                                        <color key="tintColor" red="0.79836362599999999" green="0.7265259624" blue="0.6627336144" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                        <color key="textColor" red="0.94971594198984766" green="0.86548797492009877" blue="0.7914299516582064" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.64320272840000003" green="0.56818518559999998" blue="0.5076942941" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="55t-Uv-PVe">
+                                <rect key="frame" x="74" y="172" width="748" height="221"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7IE-UL-Jo0">
+                                        <rect key="frame" x="0.0" y="0.0" width="1142" height="200"/>
+                                        <color key="tintColor" red="0.4686310279" green="0.29231250889999999" blue="0.10744155449999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="xZI-Iq-EhO"/>
+                                        </constraints>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date                  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jP7-ea-XiH">
+                                        <rect key="frame" x="0.0" y="201" width="748" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="f5T-EE-1Zp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.59442830089999998" green="0.5107723475" blue="0.45096856359999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="jP7-ea-XiH" secondAttribute="bottom" id="gc9-oa-Lpv"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.91160762470000001" blue="0.83624087670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="55t-Uv-PVe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="4ev-wF-Ers"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ndm-gB-RhG" secondAttribute="trailing" constant="30" id="6uI-1I-rv4"/>
+                            <constraint firstItem="ndm-gB-RhG" firstAttribute="top" secondItem="aa2-xF-K2n" secondAttribute="bottom" constant="50" id="EAa-qJ-Uuf"/>
+                            <constraint firstItem="55t-Uv-PVe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Fpx-uM-M2Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aa2-xF-K2n" secondAttribute="trailing" constant="30" id="IIk-9n-sVZ"/>
+                            <constraint firstItem="aa2-xF-K2n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="PML-Zx-ljg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="55t-Uv-PVe" secondAttribute="trailing" constant="30" id="hM0-6y-CfR"/>
+                            <constraint firstItem="ndm-gB-RhG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="pVc-DJ-PZ8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="55t-Uv-PVe" secondAttribute="trailing" constant="30" id="sRT-Ib-fWY"/>
+                            <constraint firstItem="aa2-xF-K2n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="spS-ps-c0p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currencySignLbl" destination="40M-WS-GeJ" id="ZO0-i6-LC9"/>
+                        <outlet property="currencyView" destination="ndm-gB-RhG" id="9sJ-8p-g2I"/>
+                        <outlet property="dateLbl" destination="jP7-ea-XiH" id="Hpr-XF-frH"/>
+                        <outlet property="pickerFrom" destination="7IE-UL-Jo0" id="QMh-60-RaR"/>
+                        <outlet property="rateLbl" destination="arf-db-aZz" id="xCc-uJ-Z9j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="eurosign.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
